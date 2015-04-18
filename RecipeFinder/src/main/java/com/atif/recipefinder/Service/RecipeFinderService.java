@@ -22,7 +22,8 @@ public class RecipeFinderService {
     	
     	for (Recipe recipe : recipies) { 
     		Date closestUseby = findClosestUsebyItemRecipeWithValidIngredients(recipe,fridgeItemsMap);
-			foundRecipes.put(closestUseby,recipe);    		
+			if(closestUseby != null)
+				foundRecipes.put(closestUseby,recipe);    		
     	}
     	
     	return foundRecipes;
@@ -47,7 +48,7 @@ public class RecipeFinderService {
     private static FridgeItem getIngredientInFridge(Ingredient ingredient,Map<String,FridgeItem> fridgeItems){
     	FridgeItem item = fridgeItems.get(ingredient.getItem());
     	Date currentDate = new Date();
-    	if(item != null & currentDate.compareTo(item.getUseBy()) >= 0 && item.getAmount() >= ingredient.getAmount()){
+    	if(item != null && ingredient!= null && currentDate.compareTo(item.getUseBy())<= 0 && item.getAmount() >= ingredient.getAmount()){
     		return item;
     	}
     	

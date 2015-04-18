@@ -17,7 +17,7 @@ public class FridgeItem extends Ingredient {
 	}
 	
 	public void setUseByAsString(String useByAsString) throws ParseException {
-		   DateFormat df = new SimpleDateFormat("dd/mm/yyyy");
+		   DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
 		   Date d = df.parse(useByAsString);
 		   setUseBy(d);
 	}
