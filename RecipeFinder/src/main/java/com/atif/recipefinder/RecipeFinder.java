@@ -19,7 +19,6 @@ public class RecipeFinder
 	
 	public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
         if (args.length != 2) {	     
 	       System.out.println("Illegal Arguments"); 
 	       System.out.println(""); 

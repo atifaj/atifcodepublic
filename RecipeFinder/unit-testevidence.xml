@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="java" project="RecipeFinder" tests="6" started="6" failures="0" errors="0" ignored="0">
+  <testsuite name="com.atif.RecipeFinder.Service.JSONReaderServiceTest" time="0.313">
+    <testcase name="testGetRecipesFromJSON" classname="com.atif.RecipeFinder.Service.JSONReaderServiceTest" time="0.313"/>
+  </testsuite>
+  <testsuite name="com.atif.RecipeFinder.Service.CVSReaderServiceTest" time="0.031">
+    <testcase name="testGetFridgeItemsFromCSV" classname="com.atif.RecipeFinder.Service.CVSReaderServiceTest" time="0.031"/>
+  </testsuite>
+  <testsuite name="com.atif.RecipeFinder.AppTest" time="0.0">
+    <testcase name="testApp" classname="com.atif.RecipeFinder.AppTest" time="0.0"/>
+  </testsuite>
+  <testsuite name="com.atif.RecipeFinder.Service.RecipeFinderServiceTest" time="0.0">
+    <testcase name="testFindValidRecpieswithNonValidUseBy" classname="com.atif.RecipeFinder.Service.RecipeFinderServiceTest" time="0.0"/>
+    <testcase name="testFindValidRecpies" classname="com.atif.RecipeFinder.Service.RecipeFinderServiceTest" time="0.0"/>
+    <testcase name="testFindValidRecpieswithNonValidIngrdiant" classname="com.atif.RecipeFinder.Service.RecipeFinderServiceTest" time="0.0"/>
+  </testsuite>
+</testrun>
